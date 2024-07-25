@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="933e2ec0-57cb-4da9-83a9-bd669723395b" name="Changes" comment="11.6 学习">
-      <change afterPath="$PROJECT_DIR$/../../JavaEE_advanced/bite/captcha-demo/src/main/java/com/bite/captcha/Study.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/myblog/controller/Study.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaEE_advanced/bite/captcha-demo/src/main/java/com/bite/captcha/TestInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaEE_advanced/bite/captcha-demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaEE_advanced/bite/captcha-demo/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myblog/Study.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myblog/config/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myblog/config/LoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myblog/config/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myblog/config/MyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/myblog/config/MyConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/myblog/config/MyConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring_cloud/3-nacos-discovery-demo/consumer/src/main/java/com/example/consumer/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_cloud/3-nacos-discovery-demo/consumer/src/main/java/com/example/consumer/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring_cloud/3-nacos-discovery-demo/provider/src/main/java/com/example/provider/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_cloud/3-nacos-discovery-demo/provider/src/main/java/com/example/provider/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring_cloud/3-nacos-discovery-demo/provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_cloud/3-nacos-discovery-demo/provider/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mq_t/src/main/java/com/example/mq/study/Study.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mq_t/src/main/java/com/example/mq/mqserver/core/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mq_t/src/main/java/com/example/mq/mqserver/core/Router.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mq_t/src/main/java/com/example/mq/study/MSGQueue2.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +52,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/application/gitee/JavaLearning/JavaEE_advanced/bite/captcha-demo",
+    "last_opened_file_path": "C:/application/gitee/JavaLearning/project/blog-springboot-mp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -172,6 +161,7 @@
       <workItem from="1715851261030" duration="1560000" />
       <workItem from="1715935848921" duration="598000" />
       <workItem from="1720922282849" duration="4269000" />
+      <workItem from="1721826246874" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="10.2 学习">
       <created>1696251705477</created>

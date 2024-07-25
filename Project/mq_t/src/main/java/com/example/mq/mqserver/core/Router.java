@@ -34,7 +34,7 @@ public class Router {
             return false;
         }
         // 检查 * 或者 # 是否是独立的部分.
-        // aaa.*.bbb 合法情况;  aaa.a*.bbb 非法情况.
+        // aaa.*.bbb 合法情况;  aaa.a*.bbb 非法情q况.
         String[] words = bindingKey.split("\\.");
         for (String word : words) {
             // 检查 word 长度 > 1 并且包含了 * 或者 # , 就是非法的格式了.
