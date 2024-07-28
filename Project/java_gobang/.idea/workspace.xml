@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="689f8145-75bd-4fdf-8a88-5fb2dc616f82" name="Changes" comment="11.19">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_gobang/Study.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_oj/src/main/java/Study.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-springboot-mp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-springboot-mp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-springboot-mp/src/main/java/com/example/myblog/Study.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-springboot-mp/src/main/java/com/example/myblog/Study.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_gobang/study/Study.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_gobang/api/UserAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_gobang/api/UserAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java_oj/src/main/java/dao/ProblemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java_oj/src/main/java/dao/ProblemDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +126,7 @@
       <workItem from="1715615773798" duration="1434000" />
       <workItem from="1716170234852" duration="8098000" />
       <workItem from="1716256442612" duration="3506000" />
+      <workItem from="1722047273248" duration="9980000" />
     </task>
     <task id="LOCAL-00001" summary="10.8 完善项目">
       <created>1696768988184</created>
