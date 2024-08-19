@@ -1,38 +1,27 @@
 package com.example.mq.study;
 
-import com.example.mq.mqserver.VirtualHost;
 
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import com.example.mq.mqserver.core.BasicProperties;
+import com.example.mq.mqserver.core.Message;
+import com.sun.org.apache.xerces.internal.impl.XMLEntityManager;
+
+import java.util.UUID;
 
 public class Study {
+    private BasicProperties basicProperties = new BasicProperties();
+    private byte[] body;
+    private transient long offsetBeg = 0;
+    private transient long offsetEnd = 0;
+    private byte isValisd = 0x1;
     
-    private ServerSocket serverSocket = null;
-    
-    private VirtualHost virtualHost = new VirtualHost("default");
-    private ConcurrentHashMap<String, Socket> sessions = new ConcurrentHashMap<>();
-    private ExecutorService executorService = null;
-    private volatile boolean runnable = true;
-    
-    public Study(int port) throws IOException {
-        serverSocket = new ServerSocket(port);
-    }
-    
-    public void start() {
-        System.out.println("[BrokerServer] 启动！");
-        executorService = Executors.newCachedThreadPool();
-        try {
-            while (runnable) {
-                Socket clientSocket = serverSocket.accept();
-                
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+    public static Message createMessageWithId(String routingKey, BasicProperties basicProperties, byte[] body) {
+        Message message = new Message();
+        if (basicProperties != null) {
+            message.setBasicProperties(basicProperties);
         }
+        message.setMessageId("M-" + UUID.randomUUID());
+        message.setRoutingKey(routingKey);
+        message.body = 
     }
     
 }

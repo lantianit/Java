@@ -142,7 +142,7 @@ public class BrokerServer {
         } else if (request.getType() == 0x4) {
             ExchangeDeleteArguments arguments = (ExchangeDeleteArguments) basicArguments;
             ok = virtualHost.exchangeDelete(arguments.getExchangeName());
-        } else if (request.getType() == 0x5) {
+         } else if (request.getType() == 0x5) {
             QueueDeclareArguments arguments = (QueueDeclareArguments) basicArguments;
             ok = virtualHost.queueDeclare(arguments.getQueueName(), arguments.isDurable(),
                     arguments.isExclusive(), arguments.isAutoDelete(), arguments.getArguments());
