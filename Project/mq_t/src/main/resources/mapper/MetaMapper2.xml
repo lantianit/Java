@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mq.mqserver.mapper.MetaMapper">
+    <update id="createExchangeTable">
+        create table if not exists exchange(
+            name varchar(50) primary key,
+            type int,
+            durable boolean,
+            autodelete boolean,
+            arguments varchar(1024)
+        );
+    </update>
+
+    <insert id="insertExchange" parameterType="com.example.mq.mqserver.core.Exchange">
+        insert into exchange values(#{name}, #{type}, #{durable});
+    </insert>
+    
+</mapper>    
