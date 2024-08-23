@@ -4,29 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringCloud.iml" filepath="$PROJECT_DIR$/.idea/SpringCloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/2-nacos-discovery-demo/consumer/consumer.iml" filepath="$PROJECT_DIR$/2-nacos-discovery-demo/consumer/consumer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/3-nacos-discovery-demo/consumer/consumer (1).iml" filepath="$PROJECT_DIR$/3-nacos-discovery-demo/consumer/consumer (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/4-spring-cloud-loadbalancer-demo/consumer/consumer (2).iml" filepath="$PROJECT_DIR$/4-spring-cloud-loadbalancer-demo/consumer/consumer (2).iml" />
-      <module fileurl="file://$PROJECT_DIR$/1-nacos-configuration-center/demo.iml" filepath="$PROJECT_DIR$/1-nacos-configuration-center/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/5-spring-cloud-gateway-demo/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/5-spring-cloud-gateway-demo/gateway-service/gateway-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/6-spring-cloud-gateway-demo/gateway-service/gateway-service (1).iml" filepath="$PROJECT_DIR$/6-spring-cloud-gateway-demo/gateway-service/gateway-service (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/7-gray-demo/gray-demo.iml" filepath="$PROJECT_DIR$/7-gray-demo/gray-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/7-gray-demo/gray-loadbalancer/gray-loadbalancer.iml" filepath="$PROJECT_DIR$/7-gray-demo/gray-loadbalancer/gray-loadbalancer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/7-gray-demo/log-service/log-service.iml" filepath="$PROJECT_DIR$/7-gray-demo/log-service/log-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/2-nacos-discovery-demo/nacos-discovery-demo.iml" filepath="$PROJECT_DIR$/2-nacos-discovery-demo/nacos-discovery-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/3-nacos-discovery-demo/nacos-discovery-demo (1).iml" filepath="$PROJECT_DIR$/3-nacos-discovery-demo/nacos-discovery-demo (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/7-gray-demo/new-log-service/new-log-service.iml" filepath="$PROJECT_DIR$/7-gray-demo/new-log-service/new-log-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/7-gray-demo/new-user-service/new-user-service.iml" filepath="$PROJECT_DIR$/7-gray-demo/new-user-service/new-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/7-gray-demo/order-service/order-service.iml" filepath="$PROJECT_DIR$/7-gray-demo/order-service/order-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/6-spring-cloud-gateway-demo/order-service/order-service (1).iml" filepath="$PROJECT_DIR$/6-spring-cloud-gateway-demo/order-service/order-service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/2-nacos-discovery-demo/provider/provider.iml" filepath="$PROJECT_DIR$/2-nacos-discovery-demo/provider/provider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/3-nacos-discovery-demo/provider/provider (1).iml" filepath="$PROJECT_DIR$/3-nacos-discovery-demo/provider/provider (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/4-spring-cloud-loadbalancer-demo/provider/provider (2).iml" filepath="$PROJECT_DIR$/4-spring-cloud-loadbalancer-demo/provider/provider (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/5-spring-cloud-gateway-demo/spring-cloud-gateway-demo.iml" filepath="$PROJECT_DIR$/5-spring-cloud-gateway-demo/spring-cloud-gateway-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/6-spring-cloud-gateway-demo/spring-cloud-gateway-demo (1).iml" filepath="$PROJECT_DIR$/6-spring-cloud-gateway-demo/spring-cloud-gateway-demo (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/4-spring-cloud-loadbalancer-demo/spring-cloud-loadbalancer-demo.iml" filepath="$PROJECT_DIR$/4-spring-cloud-loadbalancer-demo/spring-cloud-loadbalancer-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/7-gray-demo/user-service/user-service.iml" filepath="$PROJECT_DIR$/7-gray-demo/user-service/user-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/5-spring-cloud-gateway-demo/user-service/user-service (1).iml" filepath="$PROJECT_DIR$/5-spring-cloud-gateway-demo/user-service/user-service (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/6-spring-cloud-gateway-demo/user-service/user-service (2).iml" filepath="$PROJECT_DIR$/6-spring-cloud-gateway-demo/user-service/user-service (2).iml" />
     </modules>
   </component>
 </project>

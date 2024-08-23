@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="new-log-service" />
+        <module name="provider (3)" />
         <module name="user-service" />
         <module name="order-service (1)" />
         <module name="demo" />
+        <module name="order-service (2)" />
         <module name="gateway-service (1)" />
+        <module name="gateway-service (2)" />
+        <module name="user-service (3)" />
         <module name="provider" />
         <module name="user-service (1)" />
         <module name="gateway-service" />
@@ -20,6 +24,7 @@
         <module name="gray-loadbalancer" />
         <module name="order-service" />
         <module name="provider (2)" />
+        <module name="consumer (3)" />
         <module name="provider (1)" />
         <module name="consumer (2)" />
         <module name="consumer" />
@@ -28,29 +33,12 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="consumer" target="17" />
-      <module name="consumer (1)" target="17" />
-      <module name="consumer (2)" target="17" />
-      <module name="demo" target="17" />
       <module name="gateway-service" target="17" />
-      <module name="gateway-service (1)" target="17" />
-      <module name="gray-demo" target="17" />
-      <module name="gray-loadbalancer" target="17" />
-      <module name="log-service" target="17" />
       <module name="nacos-discovery-demo" target="17" />
-      <module name="nacos-discovery-demo (1)" target="17" />
-      <module name="new-log-service" target="17" />
-      <module name="new-user-service" target="17" />
       <module name="order-service" target="17" />
-      <module name="order-service (1)" target="17" />
       <module name="provider" target="17" />
-      <module name="provider (1)" target="17" />
-      <module name="provider (2)" target="17" />
       <module name="spring-cloud-gateway-demo" target="17" />
-      <module name="spring-cloud-gateway-demo (1)" target="17" />
-      <module name="spring-cloud-loadbalancer-demo" target="17" />
       <module name="user-service" target="17" />
-      <module name="user-service (1)" target="17" />
-      <module name="user-service (2)" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
