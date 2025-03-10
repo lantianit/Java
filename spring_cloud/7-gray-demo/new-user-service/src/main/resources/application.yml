@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user-service-gray
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        metadata: { "gray-tag": "true" } # 当前为灰度节点
+server:
+  port: 0

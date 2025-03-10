@@ -1,0 +1,20 @@
+spring:
+  main:
+    web-application-type: reactive
+  application:
+    name: gateway-gray
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        register-enabled: false
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://user-service-gray
+          predicates:
+            - Path=/user/**
+server:
+  port: 10086

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: nacos-consumer-demo
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        register-enabled: false # 消费者（不需要将此服务注册到nacos）
+    openfeign:
+      client:
+        config:
+          default:
+            connect-timeout: 1000 # 连接超时时间
+            read-timeout: 1000 # 读取超时时间
+            retryer: com.example.consumer.config.CustomRetryer
+server:
+  port: 8080

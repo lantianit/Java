@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: userservice
+          uri: http://localhost:9090
+          predicates:
+            - Path=/user/**
+    sentinel:
+      transport:
+        dashboard: localhost:18080
+      scg: # 配置限流之后，响应内容
+        fallback:
+          # 两种模式，一种是 response 返回文字提示信息，
+          # 另一种是 redirect 重定向跳转，不过配置 redirect 也要配置对应的跳转的 uri
+          mode: response
+          # 响应的状态
+          response-status: 200
+          # 响应体
+          response-body: '{"code": 429,"message": "被限流！"}'
+  application:
+    name: gateway-service
+server:
+  port: 10086

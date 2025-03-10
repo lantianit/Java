@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: user-service-gray
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+server:
+  port: 0

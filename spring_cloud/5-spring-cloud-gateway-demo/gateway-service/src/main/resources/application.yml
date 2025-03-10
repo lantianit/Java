@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: userservice
+        uri: http://localhost:9090 # 路由
+        predicates: # 断言
+        - Path=/user/**
+        - Header=X-Header-Flag, \d+
+      - id: orderservice
+        uri: http://localhost:9091
+        predicates:
+        - Path=/order/**
+server:
+  port: 10086

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: sentinel-demo
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:18080 # 设置 sentinel 控制台的连接地址
+        heartbeatIntervalMs: 10s # 心跳包发送周期
+        clientIp: 127.0.0.1
+        port: 8725 # 设置和控制台交互的端口

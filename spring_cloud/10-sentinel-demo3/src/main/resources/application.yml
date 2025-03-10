@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: sentinel-demo
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:18080 # 设置 sentinel 控制台的连接地址
+#        dashboard: 121.37.195.189:18080
+        heartbeatIntervalMs: 10s # 心跳包发送周期
+#        clientIp: 127.0.0.1
+#        port: 8725 # 设置和控制台交互的端口
+      datasource:
+        ds:
+          nacos:
+            server-addr: localhost:8848
+            username: nacos
+            password: nacos
+            data-id: ${spring.application.name}-flow-rules
+            group-id: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+        ds2:
+          nacos:
+            server-addr: localhost:8848
+            username: nacos
+            password: nacos
+            data-id: ${spring.application.name}-degrade-rules
+            group-id: DEFAULT_GROUP
+            data-type: json
+            rule-type: degrade

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: nacos-discovery-demo # Nacos 服务名（很重要，命名不用使用“_”）
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        ephemeral: true # 设置此服务为永久实例
+#        group: TEST_GROUP
+server:
+  port: 0 # 动态端口

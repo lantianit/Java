@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        register-enabled: false
+    loadbalancer:
+      cache:
+        enabled: true # 关闭 loadbalancer 缓存
+        ttl: 10 # 缓存存活时间
+        capacity: 1000 # 缓存存储容量

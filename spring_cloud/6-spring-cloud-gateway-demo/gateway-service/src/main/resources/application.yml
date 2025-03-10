@@ -1,0 +1,60 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+    gateway:
+      routes:
+        - id: userservice
+          uri: lb://user-service-gateway
+          predicates:
+            - Path=/user/**
+          filters:
+            - PrefixPath=/v2
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 1 # 每秒请求数
+                redis-rate-limiter.burstCapacity: 1 # 最大请求数
+                keyResolver: '#{@ipAddressKeyResolver}' # spEL表达式
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+#        - id: userservice
+#          uri: lb://user-service-gateway
+#          predicates:
+#            - Path=/user/**,/userlog/**
+#          filters:
+#            - AddResponseHeader=My-Resp-Header,javacn.site
+#        - id: orderservice
+#          uri: lb://order-service-gateway
+#          predicates:
+#            - Path=/order/**
+#          filters:
+#            - AddResponseHeader=My-Resp-Header,javacn.site
+#      default-filters:
+#        - AddResponseHeader=My-Resp-Header,gateway.org
+#        - AddRequestHeader=My-Req-Marking,javacn.site
+
+
+#        - id: user-service
+#          uri: http://localhost:9090
+#          predicates:
+#            - Weight=group1,1
+#        - id: user-service2
+#          uri: http://localhost:9092
+#          predicates:
+#            - Weight=group1,1
+
+#      - id: userservice
+#        uri: http://localhost:9090 # 路由
+#        predicates: # 断言
+#        - Path=/user/**,/userlog/**
+#      - id: orderservice
+#        uri: http://localhost:9091
+#        predicates:
+#        - Path=/order/**
+server:
+  port: 10086
