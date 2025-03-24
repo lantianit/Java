@@ -1,0 +1,26 @@
+/* 导入项目小图标样式 */
+@import "./styles/iconfont.wxss";
+
+/* 初始化全局样式 */
+page,view,text,swiper,swiper-item,image,navigator{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 全局变量定义 颜色、字体大小等 
+   rpx（responsive pixel）: 可以根据屏幕宽度进行自适应。规定屏幕宽为750rpx。
+   如在 iPhone6 上，屏幕宽度为375px，共有750个物理像素，
+   则750rpx = 375px = 750物理像素，
+   1rpx = 0.5px = 1物理像素。 
+   28rpx=14px
+*/
+page{
+  /* 主题颜色 */
+  --themeColor:#9C6B30;
+  /* 字体大小 rpx自适应大小 */
+  font-size: 28rpx;
+}
+image{
+  width: 100%;
+}

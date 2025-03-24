@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/videoPage/index",
+    "pages/classification/index",
+    "pages/rankinglist/index",
+    "pages/me/index",
+    "pages/search/index",
+    "pages/login/login",
+    "pages/test/index",
+    "pages/historyPage/index",
+    "pages/likeHistoryPage/index",
+    "pages/favoriteHistoryPage/index",
+    "pages/blankPage/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9C6B30",
+    "navigationBarTitleText": "以文化字",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#9C6B30",
+    "backgroundColor": "#fafafa",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icons/_home.png",
+      "selectedIconPath": "icons/home.png"
+    },{
+      "pagePath": "pages/classification/index",
+      "text": "分类",
+      "iconPath": "icons/_classification.png",
+      "selectedIconPath": "icons/classification.png"
+    },{
+      "pagePath": "pages/rankinglist/index",
+      "text": "排行榜",
+      "iconPath": "icons/_rankinglist.png",
+      "selectedIconPath": "icons/rankinglist.png"
+    },{
+      "pagePath": "pages/me/index",
+      "text": "我的",
+      "iconPath": "icons/_me.png",
+      "selectedIconPath": "icons/me.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

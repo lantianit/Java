@@ -1,0 +1,21 @@
+<view class="rank-page">
+    <view class="rank-title">用户积分排行榜</view>
+    <view class="rank-container">
+        <block wx:for="{{userRankList}}" wx:key="userId" wx:for-index="index">
+            <!-- 整体使用 flex 布局，让排名顺序号在左，用户信息在右 -->
+            <view class="rank-content">
+                <!-- 展示排名顺序号 -->
+                <view class="rank-order">{{index + 1}}</view>
+                <view class="user-info-wrapper">
+                    <view class="rank-item">
+                        <image class="user-pic" src="{{baseUrl + '/image/userphoto/' + item.userPic}}" mode="aspectFill"></image>
+                        <view class="user-info">
+                            <text class="nick-name">{{item.nickName}}</text>
+                            <text class="score">积分：{{item.score}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

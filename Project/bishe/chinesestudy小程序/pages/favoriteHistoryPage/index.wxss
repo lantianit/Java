@@ -1,0 +1,38 @@
+.container {
+  padding: 20rpx;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.history-list {
+  margin-top: 10rpx;
+}
+
+.history-item {
+  margin-bottom: 20rpx;
+  padding: 10rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.video-title {
+  font-size: 16px;
+  color: #333;
+  display: block;
+}
+
+.favorite-time {
+  font-size: 12px;
+  color: #999;
+  display: block;
+  margin-top: 5rpx;
+  word-break: break-all;
+  line-height: 1.4;
+} 

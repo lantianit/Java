@@ -1,0 +1,55 @@
+.index_swiper swiper {
+  width:750rpx;
+  height: 375rpx;
+}
+.index_swiper swiper image {
+  width: 100%;
+}
+.index_bigType {
+  padding-top: 15rpx;
+  background-color: #F7F7F7;
+}
+.index_bigType .bigTypeRow {
+  display: flex;
+  width: 130rpx;
+}
+.index_bigType .bigTypeRow navigator {
+  flex: 1;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color:maroon;
+}
+.index_bigType .bigTypeRow navigator image {
+  width: 147rpx;
+}
+.recommended_courses {
+  margin-top: 15rpx;
+}
+.recommended_courses .title {
+  font-size: 32rpx;
+  background-color: #E0E0E0;
+  font-weight: 600;
+  padding: 20rpx;
+  color: var(--themeColor);
+}
+.recommended_courses .courses {
+  width: 100%;
+  border-width: 1px;
+  align-items: center;
+}
+.recommended_courses .courses navigator {
+  display: block;
+  display: flex;
+  height: 35px;
+  align-items: center;
+}
+.recommended_courses .courses text {
+    font-family: "楷体", serif; 
+    font-size: 16px;
+    font-weight: 1000;
+    color: #333; 
+    padding: 5px 10px;
+}
+.recommended_courses .courses .course_icon{
+  height: 40rpx;
+}

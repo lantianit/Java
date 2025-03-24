@@ -1,0 +1,146 @@
+/* 视频模块开始 */
+.container {
+  justify-content: center;
+  align-items: center;
+}
+.container video {
+  width: 100%;
+}
+/* 视频模块结束 */
+
+/* 导航栏开始 */
+.cates_container .top_menu{
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  white-space: nowrap;
+}
+
+.cates_container .top_menu .op{
+  display: flex;
+  display: inline-block;
+  line-height: 60rpx;
+  text-align: center;
+  width: 100rpx;
+  height: 60rpx;
+  margin-right: 10rpx; 
+}
+
+.op text {
+  font-weight: normal; /* 初始设置所有菜单项字体为正常粗细 */
+  color: rgba(0, 0, 0, 0.6); /* 这里使用rgba函数设置淡白色字体颜色，你也可以替换成十六进制颜色码等其他方式 */
+}
+
+.op text[data-bold="detail"] {
+  font-weight: bold!important; /* 提高此样式的优先级，强制生效，但尽量少用这种方式 */
+  color: rgba(0, 0, 0);
+}
+
+.op text[data-bold="discussion"] {
+  font-weight: bold!important; /* 提高此样式的优先级，强制生效，但尽量少用这种方式 */
+  color: rgba(0, 0, 0);
+}
+
+/* 显示样式，设置为 block 表示显示元素 */
+.show {
+  display: block;
+}
+
+/* 隐藏样式，设置为 none 表示隐藏元素 */
+.hide {
+  display: none;
+}
+
+.detail_content_bottom {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+
+.input-area {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.comment-input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  height: 30px;
+}
+
+.container-send-button .send-button {
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+  float: right;
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 30rpx;
+  margin-top: 10rpx;
+  background-color:rgba(156, 107, 48);
+  color: white;
+  border-radius: 5px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.comment-list {
+  margin-top: 100rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.comment-item {
+  display: flex;
+  /* align-items: center; */
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px; 
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.time {
+  color: #999;
+}
+
+.comment-text {
+  word-break: break-all;
+}
+
+.interaction-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20rpx 0;
+}
+
+.like-button, .favorite-button {
+  padding: 10rpx 20rpx;
+  background-color: #9C6B30;
+  color: white;
+  border: none;
+  border-radius: 5rpx;
+  font-size: 16px;
+}

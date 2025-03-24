@@ -1,0 +1,57 @@
+<view class="container">
+  <video id="myVideo" src="http://127.0.0.1:8080/videoPlay/{{video.videoUrl}}"></video>
+</view>
+
+<view class="cates_container">
+    <!-- 上菜单 start -->
+    <!-- 上菜单 start -->
+    <scroll-view class="top_menu" scroll-x>
+      <view class="op" bindtap="handleClick" data-item="detail"><text data-bold="{{currentBoldItem === 'detail'? 'detail' : ''}}">详情</text></view>
+      <view class="op" bindtap="handleClick" data-item="discussion"><text data-bold="{{currentBoldItem === 'discussion'? 'discussion' : ''}}">讨论</text></view>
+    </scroll-view>
+    <!-- 上菜单 end -->
+    <!-- 上菜单 end -->
+
+    <!-- 下内容 start --> 
+    <scroll-view scroll-top="{{scrollTop}}" class="bottom_content" scroll-y>
+      <view class="detail_content {{currentBoldItem === 'detail'? 'show' : 'hide'}}">
+        <view class="detail_content_bottom">
+          <text>{{video.description}}
+          </text>
+        </view>
+      </view>
+      <view class="discussion_content {{currentBoldItem === 'discussion'? 'show' : 'hide'}}">
+          <!-- 评论输入框和发送按钮区域 -->
+          <view class="input-area">
+            <input class="comment-input" placeholder="请输入你的评论" bindinput="onCommentInput" />
+            <view class="container-send-button">
+              <button class="send-button" bindtap="sendComment">发送</button>
+            </view>
+          </view>
+          <!-- 评论展示区域 -->
+          <view class="comment-list"
+            wx:for="{{comments}}"
+            wx:for-item="comment"
+            wx:key="videoId"
+          >
+            <view class="comment-item">
+              <image class="avatar" src="{{baseUrl + '/image/userphoto/' + comment.userPic}}" mode="aspectFill"></image>
+              <view class="comment-content">
+                <view class="user-info">
+                  <text class="username">{{comment.nickName}}</text>
+                  <text class="time">{{comment.createTime}}</text>
+                </view>
+                <text class="comment-text">{{comment.comment}}</text>
+              </view>
+            </view>
+          </view>
+      </view>
+    </scroll-view>
+    <!-- 下内容 end -->
+
+    <view class="interaction-buttons">
+      <button class="like-button" bindtap="toggleLike">{{isLiked ? '取消点赞' : '点赞'}}</button>
+      <button class="favorite-button" bindtap="toggleFavorite">{{isFavorited ? '取消收藏' : '收藏'}}</button>
+    </view>
+
+</view>

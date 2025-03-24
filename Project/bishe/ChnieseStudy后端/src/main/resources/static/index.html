@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>视频管理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="video-container">
+        <table id="video-table">
+            <thead>
+                <tr>
+                    <th>视频ID</th>
+                    <th>视频链接</th>
+                    <th>视频标题</th>
+                    <th>视频时长</th>
+                    <th>视频简介</th>
+                    <th>创建时间</th>
+                    <th>更新时间</th>
+                    <th>推荐</th>
+                    <th>分类</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 视频数据将通过JavaScript动态插入 -->
+            </tbody>
+        </table>
+        <div id="pagination">
+            <!-- 分页按钮将通过JavaScript动态插入 -->
+        </div>
+    </div>
+    <button id="add-video-btn">增加视频</button>
+    <button id="associate-character-btn">汉字关联视频</button>
+
+    <!-- 模态对话框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">增加新视频</h2>
+            <form id="video-form">
+                <input type="hidden" id="videoId" name="videoId">
+                <label for="videoFile">上传视频文件 (MP4):</label>
+                <input type="file" id="videoFile" name="videoFile" accept=".mp4"><br>
+                <label for="title">视频标题:</label>
+                <input type="text" id="title" name="title" required><br>
+                <label for="duration">视频时长:</label>
+                <input type="text" id="duration" name="duration"><br>
+                <label for="description">视频简介:</label>
+                <textarea id="description" name="description"></textarea><br>
+                <label>推荐:</label>
+                <input type="radio" id="recommendYes" name="isRecommend" value="1"> 是
+                <input type="radio" id="recommendNo" name="isRecommend" value="0" checked> 否
+                <span>(推荐为1，不推荐为0)</span><br>
+                <label>分类:</label>
+                <select id="type" name="type" required>
+                    <option value="甲骨文">甲骨文</option>
+                    <option value="篆书">篆书</option>
+                    <option value="金文">金文</option>
+                    <option value="隶书">隶书</option>
+                    <option value="楷书">楷书</option>
+                    <option value="行书">行书</option>
+                    <option value="草书">草书</option>
+                    <option value="宋体">宋体</option>
+                    <option value="黑体">黑体</option>
+                    <option value="圆体">圆体</option>
+                    <option value="汉字思维-李山川老师" selected>汉字思维-李山川老师</option>
+                </select><br>
+                <button type="submit">提交</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 汉字关联视频模态对话框 -->
+    <div id="associate-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>关联汉字到视频</h2>
+            <form id="associate-form">
+                <label for="character">汉字:</label>
+                <input type="text" id="character" name="character" required><br>
+                <label for="video-search">搜索视频:</label>
+                <input type="text" id="video-search" name="video-search"><br>
+                <label for="video-select">选择视频:</label>
+                <select id="video-select" name="video-select" required>
+                    <!-- 视频选项将通过JavaScript动态插入 -->
+                </select><br>
+                <label for="start-time">开始时间 (秒):</label>
+                <input type="number" id="start-time" name="start-time" required><br>
+                <button type="submit">提交</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

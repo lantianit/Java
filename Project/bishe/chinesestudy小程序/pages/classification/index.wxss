@@ -1,0 +1,54 @@
+page {
+  height: 100%;
+}
+.cates .cates_container {
+  /* less中使用calc的时候要注意 */
+  height: calc( 100vh - 90rpx );
+  display: flex;
+}
+.cates .cates_container .left_menu {
+  flex: 2;
+}
+.cates .cates_container .left_menu .menu_item {
+  margin-top: 5rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.cates .cates_container .left_menu .active {
+  font-weight: bolder;
+  color: var(--themeColor);
+  border-left: 8rpx solid currentColor;
+}
+.cates .cates_container .right_content {
+  flex: 5;
+}
+.cates .cates_container .right_content .video_group {
+  padding-top: 10rpx;
+}
+
+.right_content .video_group {
+  width: 100%;
+  border-width: 1px;
+  align-items: center;
+  /* background-color: #fff; */
+}
+.right_content .video_group navigator {
+  border-bottom: 0.5px solid black;
+  display: block;
+  display: flex;
+  height: 35px;
+  align-items: center;
+}
+.right_content .video_group text {
+    font-family: "楷体", serif; 
+    font-size: 16px;
+    font-weight: 1000;
+    color: #333; 
+    padding: 5px 10px;
+}
+.right_content .video_group .course_icon{
+  height: 40rpx;
+}

@@ -1,0 +1,65 @@
+.rank-page {
+  padding: 30rpx;
+}
+
+.rank-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30rpx;
+  color: #9C6B30;
+}
+
+.rank-container {
+  padding: 20rpx;
+}
+
+.rank-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.rank-order {
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: gray;
+  margin-right: 15rpx;
+}
+
+.user-info-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.rank-item {
+  display: flex;
+  align-items: center;
+}
+
+.user-pic {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.nick-name {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.score {
+  font-size: 26rpx;
+  color: gray;
+}

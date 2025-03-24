@@ -1,0 +1,21 @@
+<!--pages/search/index.wxml-->
+<view class="search-container">
+  <input class="search-input" placeholder="输入视频标题或汉字搜索" bindinput="onSearchInput" />
+  <button class="search-button" bindtap="searchVideos">搜索</button>
+</view>
+
+<view class="search-results">
+  <block wx:for="{{searchResults}}" wx:key="videoId">
+    <navigator url="/pages/videoPage/index?videoId={{item.videoId}}" class="result-item">
+      <text class="video-title">{{item.title}}</text>
+    </navigator>
+  </block>
+</view>
+
+<view class="character-results">
+  <block wx:for="{{characterResults}}" wx:key="id">
+    <navigator url="/pages/videoPage/index?videoId={{item.videoId}}&startTime={{item.startTime}}" class="result-item">
+      <text class="character">{{item.character}}</text>
+    </navigator>
+  </block>
+</view>

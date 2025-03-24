@@ -1,0 +1,64 @@
+<!--pages/index/index.wxml-->
+<view>
+  <!-- 搜索框 start -->
+  <SearchBar></SearchBar>
+  <!-- 搜索框 end -->
+
+  <!-- 轮播图 开始 -->
+  <view class="index_swiper">
+    <swiper indicator-dots autoplay circular>
+      <swiper-item wx:for="{{swiperList}}" wx:for-item="swiper" wx:key="id">
+        <navigator url="{{index === 0 ? '/pages/blankPage/index' : '/pages/videoPage/index?videoId=32'}}">
+          <image mode="widthFix" src="{{baseUrl + '/image/swiper/' + swiper.imgurl}}"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图 结束 -->
+
+  <!-- 大类介绍开始 -->
+  <view class="index_bigType">
+    <view class="bigTypeRow">
+      <navigator
+        bindtap="handleTypeJump"
+        data-index="{{index}}"
+        wx:for="{{bigTypeList_row1}}"
+        wx:for-item="bigType"
+        wx:key="id"
+      >
+        <image mode="widthFix" src="{{baseUrl + '/image/bigtype/' + bigType.bigtypeImage}}"></image>
+      </navigator>
+    </view>
+    <view class="bigTypeRow">
+      <navigator
+        bindtap="handleTypeJump"
+        data-index="{{index+5}}"
+        wx:for="{{bigTypeList_row2}}"
+        wx:for-item="bigType"
+        wx:key="id"
+      >
+        <image mode="widthFix" src="{{baseUrl + '/image/bigtype/' + bigType.bigtypeImage}}"></image>
+      </navigator>
+    </view>
+  </view>
+  <!-- 大类介绍结束 -->
+
+  <!-- 入门课程推荐-开始 -->
+  <view class="recommended_courses">
+    <view class="title">
+      入门课程推荐
+    </view>
+    <view class="courses">
+      <navigator
+        url="/pages/videoPage/index?videoId={{recommendCourses.videoId}}"
+        data-index="{{index}}"
+        wx:for="{{recommendList}}"
+        wx:for-item="recommendCourses"
+        wx:key="id"
+      >
+        <text>{{recommendCourses.title}}</text><image class="course_icon" src="/icons/course.png" mode="heightFix"></image>
+      </navigator>
+    </view>
+  </view>
+  <!-- 入门课程推荐-结束 -->
+</view>

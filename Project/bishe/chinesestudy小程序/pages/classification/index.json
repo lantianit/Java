@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "SearchBar":"../../components/SearchBar/SearchBar"
+  },
+  "navigationBarTitleText": "以文化字"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.TVideoCommentMapper">
+    <select id="getList" resultType="org.example.entity.VO.TVideoCommentVO">
+        SELECT c.*, u.nick_name, u.user_pic
+        from t_video_comment c
+                 left join user u on c.user_id = u.user_id
+        where video_id = #{vid}
+        order by video_comment_id desc
+    </select>
+</mapper>

@@ -1,0 +1,22 @@
+<view class="container">
+
+<!-- 登录板块 -->
+<view class="login-section" wx:if="{{!isRegistered}}">
+  <input type="text" placeholder="请输入账号" bindinput="handleUserNameInput" />
+  <input type="password" placeholder="请输入密码" bindinput="handlePasswordInput" />
+  <button bindtap="handleLogin">登录</button>
+  <view class="register-link" bindtap="toggleToRegister">还没有账号？点击注册</view>
+</view>
+
+<!-- 注册板块 -->
+<view class="register-section" wx:else>
+  <view class="avatar-container" bindtap="chooseAvatar">
+    <image class="avatar" src="{{imagePath}}" mode="aspectFill"></image>
+  </view>
+  <input type="text" placeholder="请输入昵称" bindinput="handleNickNameInput" />
+  <input type="text" placeholder="请输入账号" bindinput="handleRegisterUserNameInput" />
+  <input type="password" placeholder="请输入密码" bindinput="handleRegisterPasswordInput" />
+  <button bindtap="handleRegister">注册</button>
+  <view class="login-link" bindtap="toggleToLogin">已有账号？点击登录</view>
+</view>
+</view>

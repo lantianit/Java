@@ -1,0 +1,70 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/chinesestudy?serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+#  cache:
+#    type: redis
+#  redis:
+#    host: localhost
+#    port: 6379
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto #id生成规则：数据库id自增
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+images:
+  url:
+    D:\毕设视频存储\images\
+
+#
+#weixin:
+#  jscode2sessionUrl: https://api.weixin.qq.com/sns/jscode2session
+#  appid: 换成你的
+#  secret: 换成你的
+#
+#
+##微信支付配置
+## addid 公众账号ID
+## mch_id 商户号
+## device_info 设备号
+## key 商户的key【API密匙】
+## url api请求地址
+## notify_url 服务器异步通知页面路径
+#weixinpayconfig:
+#   appid: 换成你的
+#   mch_id: 换成你的
+#   key: 换成你的
+#   url: https://api.mch.weixin.qq.com/pay/unifiedorder
+#   notify_url: https://3e31-222-184-165-54.ngrok.io/weixinpay/notifyUrl
+#
+#bigTypeImagesFilePath: D://java1234-mall/bigTypeImgs/
+#
+#productImagesFilePath: D://java1234-mall/productImgs/
+#
+#swiperImagesFilePath: D://java1234-mall/swiperImgs/
+#
+#productSwiperImagesFilePath: D://java1234-mall/productSwiperImgs/
+#
+#
+
+
+
