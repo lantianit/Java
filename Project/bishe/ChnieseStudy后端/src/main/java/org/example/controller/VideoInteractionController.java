@@ -98,4 +98,15 @@ public class VideoInteractionController {
             return null;
         }
     }
+
+    @GetMapping("/getLikeCount")
+    public R getLikeCount(@RequestParam("videoId") long videoId) {
+        try {
+            int likeCount = userVideoLikeService.getLikeCountByVideoId(videoId);
+            return R.ok(Map.of("likeCount", likeCount));
+        } catch (Exception e) {
+            log.error("Error retrieving like count for videoId: " + videoId, e);
+            return R.error("Failed to retrieve like count");
+        }
+    }
 } 

@@ -5,7 +5,7 @@ package org.example.config;
  */
 public class AppVariable {
     /** JWT 私钥 */
-    public static final String JWT_KEY = "blog-spring-cloud-jwt";
+    public static final String JWT_KEY = "bishe-jwt";
 
     /** 登录的用户 Token key */
     public static final String TOKEN_KEY = "Authorization";

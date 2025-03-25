@@ -9,4 +9,5 @@ import java.util.List;
 public interface UserVideoLikeService extends IService<UserVideoLike> {
     boolean isVideoLikedByUser(int userId, long videoId);
     List<LikedVideoVO> getLikedVideosByUserId(int userId);
+    int getLikeCountByVideoId(long videoId);
 } 

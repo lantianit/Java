@@ -4,20 +4,17 @@
 
 <view class="cates_container">
     <!-- 上菜单 start -->
-    <!-- 上菜单 start -->
     <scroll-view class="top_menu" scroll-x>
       <view class="op" bindtap="handleClick" data-item="detail"><text data-bold="{{currentBoldItem === 'detail'? 'detail' : ''}}">详情</text></view>
       <view class="op" bindtap="handleClick" data-item="discussion"><text data-bold="{{currentBoldItem === 'discussion'? 'discussion' : ''}}">讨论</text></view>
     </scroll-view>
-    <!-- 上菜单 end -->
     <!-- 上菜单 end -->
 
     <!-- 下内容 start --> 
     <scroll-view scroll-top="{{scrollTop}}" class="bottom_content" scroll-y>
       <view class="detail_content {{currentBoldItem === 'detail'? 'show' : 'hide'}}">
         <view class="detail_content_bottom">
-          <text>{{video.description}}
-          </text>
+          <text>{{video.description}}</text>
         </view>
       </view>
       <view class="discussion_content {{currentBoldItem === 'discussion'? 'show' : 'hide'}}">
@@ -50,8 +47,7 @@
     <!-- 下内容 end -->
 
     <view class="interaction-buttons">
-      <button class="like-button" bindtap="toggleLike">{{isLiked ? '取消点赞' : '点赞'}}</button>
+      <button class="like-button" bindtap="toggleLike">{{isLiked ? '取消点赞' : '点赞'}} ({{likeCount}})</button>
       <button class="favorite-button" bindtap="toggleFavorite">{{isFavorited ? '取消收藏' : '收藏'}}</button>
     </view>
-
 </view>

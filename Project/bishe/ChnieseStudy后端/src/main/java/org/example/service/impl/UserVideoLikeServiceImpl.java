@@ -61,4 +61,11 @@ public class UserVideoLikeServiceImpl extends ServiceImpl<UserVideoLikeMapper, U
         }
         return likedVideos;
     }
+
+    @Override
+    public int getLikeCountByVideoId(long videoId) {
+        QueryWrapper<UserVideoLike> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("video_id", videoId);
+        return this.count(queryWrapper);
+    }
 } 
