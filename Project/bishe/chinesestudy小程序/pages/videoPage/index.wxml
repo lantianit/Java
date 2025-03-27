@@ -46,7 +46,7 @@
     </scroll-view>
     <!-- 下内容 end -->
 
-    <view class="interaction-buttons">
+    <view class="interaction-buttons" wx:if="{{!isCommentActive}}">
       <button class="like-button" bindtap="toggleLike">{{isLiked ? '取消点赞' : '点赞'}} ({{likeCount}})</button>
       <button class="favorite-button" bindtap="toggleFavorite">{{isFavorited ? '取消收藏' : '收藏'}}</button>
     </view>

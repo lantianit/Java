@@ -17,4 +17,8 @@ public class CharacterVideoMapping {
 
     private Long videoId;
     private Integer startTime;
+
+    // 新增的字段，用于接收视频的标题
+    @TableField(exist = false)
+    private String title;
 } 

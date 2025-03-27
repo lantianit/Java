@@ -47,3 +47,9 @@
   font-size: 16px;
   color: #333;
 }
+
+.course-title {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5rpx;
+}

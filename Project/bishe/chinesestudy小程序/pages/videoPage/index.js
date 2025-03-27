@@ -18,6 +18,7 @@ Page({
         isLiked: false,
         isFavorited: false,
         likeCount: 0, // 新增：用于存储点赞个数
+        isCommentActive: false, // 新增：用于跟踪评论区是否被激活
     },
 
     onLoad: function (options) {
@@ -52,8 +53,9 @@ Page({
     handleClick: function (e) {
         const clickedItem = e.currentTarget.dataset.item;
         this.setData({
-            currentBoldItem: clickedItem, // 更新当前加粗的菜单项标识
-            scrollTop: 0 // 每次点击菜单时可将滚动位置重置为顶部（可根据实际需求调整）
+            currentBoldItem: clickedItem,
+            scrollTop: 0,
+            isCommentActive: clickedItem === 'discussion' // 新增：如果点击的是讨论区，激活评论区
         });
     },
 

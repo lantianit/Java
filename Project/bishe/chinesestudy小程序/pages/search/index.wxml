@@ -16,6 +16,7 @@
   <block wx:for="{{characterResults}}" wx:key="id">
     <navigator url="/pages/videoPage/index?videoId={{item.videoId}}&startTime={{item.startTime}}" class="result-item">
       <text class="character">{{item.character}}</text>
+      <text class="course-title">（所属课程：{{item.title}}）</text>
     </navigator>
   </block>
 </view>
