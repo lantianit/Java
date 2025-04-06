@@ -152,9 +152,16 @@ Page({
           const data = res.statusCode;
           if (data === 200) {
               wx.showToast({
-                  title: '图片上传成功',
-                  icon: 'success'
+                  title: '用户注册成功',
+                  icon: 'success',
+                  duration: 2000
               });
+              // 注册成功后跳转到登录页面
+              setTimeout(() => {
+                  wx.redirectTo({
+                      url: '/pages/login/login' // 确保路径正确
+                  });
+              }, 2000); // 延迟以便用户看到提示信息
           } else {
               wx.showToast({
                   title: data.message,
@@ -170,22 +177,6 @@ Page({
           });
       }
   });
-    if (result.code === 200) {
-      // 注册成功逻辑，比如提示用户等，可以根据实际需求完善
-      wx.showToast({
-        title: '注册成功',
-        icon: 'success'
-      });
-      this.toggleToLogin();
-    } else {
-      // 注册失败逻辑，提示用户等
-      console.log("result的值");
-      console.log(result);
-      wx.showToast({
-        title: result.message,
-        icon: 'none'
-      });
-    }
   },
 
   // 模拟获取文件流及文件名的方法（需根据小程序实际文件系统API调整）

@@ -1,8 +1,30 @@
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-size: 20px;
-  color: #333;
-} 
+/* pages/blankPage/index.wxss */
+.guide-container {
+  padding: 20rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.subtitle {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.subsection {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-top: 15rpx;
+  margin-bottom: 5rpx;
+}
+
+.content {
+  font-size: 26rpx;
+  line-height: 1.6;
+  margin-bottom: 10rpx;
+}

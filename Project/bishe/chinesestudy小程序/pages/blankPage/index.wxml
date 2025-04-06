@@ -1,3 +1,61 @@
-<view class="container">
-  <text>这是一个空白页</text>
-</view> 
+<view class="guide-container">
+  <view class="section">
+    <view><text class="title">欢迎使用“以文化字视频学习小程序”</text></view>
+    <view><text class="content">本指南将帮助您快速上手使用本小程序的主要功能。</text></view>
+  </view>
+
+  <view class="section">
+    <view><text class="subtitle">功能概览</text></view>
+    <view><text class="content">- 用户登录：输入账号和密码进行登录。</text></view>
+    <view><text class="content">- 用户注册：新用户可以注册账号，上传头像并设置昵称。</text></view>
+    <view><text class="content">- 视频学习：浏览和观看视频，学习汉字文化。</text></view>
+    <view><text class="content">- 互动功能：点赞、收藏视频，参与评论讨论。</text></view>
+  </view>
+
+  <view class="section">
+    <view><text class="subtitle">使用步骤</text></view>
+    <view><text class="subsection">登录</text></view>
+    <view><text class="content">1. 打开小程序，进入登录页面。</text></view>
+    <view><text class="content">2. 输入账号和密码：</text></view>
+    <view><text class="content">   - 在“账号”输入框中输入您的登录名。</text></view>
+    <view><text class="content">   - 在“密码”输入框中输入您的密码。</text></view>
+    <view><text class="content">3. 点击“登录”按钮：</text></view>
+    <view><text class="content">   - 如果登录成功，您将看到“登录成功”的提示，并自动跳转到首页。</text></view>
+    <view><text class="content">   - 如果登录失败，请检查您的账号和密码是否正确。</text></view>
+
+    <view><text class="subsection">注册</text></view>
+    <view><text class="content">1. 切换到注册页面：</text></view>
+    <view><text class="content">   - 在登录页面，点击“注册”按钮切换到注册状态。</text></view>
+    <view><text class="content">2. 输入注册信息：</text></view>
+    <view><text class="content">   - 输入您的昵称、账号和密码。</text></view>
+    <view><text class="content">   - 点击“选择头像”按钮，从相册或相机中选择一张图片作为您的头像。</text></view>
+    <view><text class="content">3. 点击“注册”按钮：</text></view>
+    <view><text class="content">   - 如果注册成功，您将看到“用户注册成功”的提示，并自动跳转回登录页面。</text></view>
+    <view><text class="content">   - 如果注册失败，请检查您的信息是否完整。</text></view>
+
+    <view><text class="subsection">视频学习</text></view>
+    <view><text class="content">1. 浏览视频：</text></view>
+    <view><text class="content">   - 在首页或分类页面，浏览可用的视频列表。</text></view>
+    <view><text class="content">2. 观看视频：</text></view>
+    <view><text class="content">   - 点击视频进入播放页面，开始观看。</text></view>
+    <view><text class="content">   - 您可以在视频播放时查看视频详情和评论。</text></view>
+    <view><text class="content">3. 互动功能：</text></view>
+    <view><text class="content">   - 在视频页面，您可以点赞或收藏视频。</text></view>
+    <view><text class="content">   - 点击“讨论”切换到评论区，查看或发表您的评论。</text></view>
+  </view>
+
+  <view class="section">
+    <view><text class="subtitle">其他功能</text></view>
+    <view><text class="content">- 查看历史记录：在“历史记录”页面查看您观看过的视频。</text></view>
+    <view><text class="content">- 查看收藏：在“收藏”页面查看您收藏的视频。</text></view>
+    <view><text class="content">- 个人中心：在“我的”页面查看和编辑您的个人信息。</text></view>
+  </view>
+
+  <view class="section">
+    <view><text class="subtitle">注意事项</text></view>
+    <view><text class="content">- 请确保您的网络连接正常，以便顺利使用小程序的各项功能。</text></view>
+    <view><text class="content">- 如果遇到问题，请尝试重新启动小程序或联系技术支持。</text></view>
+    <view><text class="content">感谢您使用“以文化字视频学习小程序”，祝您学习愉快！</text></view>
+  </view>
+</view>
+    

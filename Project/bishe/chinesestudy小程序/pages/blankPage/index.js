@@ -1,6 +1,9 @@
+// pages/blankPage/index.js
 Page({
-  data: {},
+  data: {
+    // 确保数据已正确初始化
+  },
   onLoad() {
-    console.log("空白页加载");
+    // 确保数据在页面加载时正确设置
   }
-}); 
+});
